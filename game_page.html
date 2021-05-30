@@ -12,28 +12,32 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body class="body_background">
 	<h4 id="player1_name"></h4> <span id="player1_score"></span>
 	<br>
 	<h4 id="player2_name"></h4> <span id="player2_score"></span>
 	<div class="container">
 		<center>
-			<h2 style="color: white;">Guess The Word!</h2>
-			<h3 id="player_question"></h3>
-			<h3 id="player_answer"></h3>
+			<h2 style="color: white;">Math Quiz !</h2>
+			<h3 id="player_question">Answer Turn-</h3>
+			<h3 id="player_answer">Question Turn-</h3>
 			<div id="output" class="col-lg-6"></div>
 			<br>
 			<br>
 
-			<label>Send You Word: <b style="color: rgb(255, 0, 0)">Try putting word which has 5 or more
-					alphabet</b></label>
+			<label style="font-size: 30px;">Send You Number: </label>
+			<br>
+			<span>Number-1</span>
+					<input type="text" id="word" class="form-control" placeholder="word">
+			<br>
+			<span>Number-2</span>
 			<input type="text" id="word" class="form-control" placeholder="word">
 			<br>
-			<button onclick="send()" class="btn btn-success" style="width: 30%;">Send</button>
+			<button id="bu" onclick="send()" class="btn btn-success" style="width: 30%;">Send</button>
 		</center>
 	</div>
 
-	<script src="main.js"></script>
+	<script src="Game.js"></script>
 </body>
 
 </html>
